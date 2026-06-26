@@ -1,0 +1,251 @@
+/*---------Código Capacitación---------*/
+/*====================================|
+|    view_4035 = tablaMisCapacitaciones   |
+|         view_4039 = tablaGeneral              |
+|====================================*/
+
+/*Tablas*/
+#view_4039 .kn-table,
+#view_4035 .kn-table {
+  width: 100% !important; 
+  font-size: 16px;
+  margin: 0 auto;
+  border-radius: 10px !important;
+  overflow: hidden;
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+#view_4039 .kn-table-wrapper,
+#view_4035 .kn-table-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #F5F5F5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Quitar bordes en las esquinas*/
+#view_4039 thead th:first-child,
+#view_4035 thead th:first-child {
+  border-top-left-radius: 12px;
+  border-left: none;
+  border-top: none;
+}
+#view_4039 thead th:last-child,
+#view_4035 thead th:last-child {
+  border-top-right-radius: 12px;
+  border-right: none;
+  border-top: none;
+}
+#view_4039 tbody tr:last-child td:first-child,
+#view_4035 tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+  border-left: none;
+  border-bottom: none;
+}
+#view_4039 tbody tr:last-child td:last-child,
+#view_4035 tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+  border-right: none;
+  border-bottom: none;
+}
+/* Hover*/
+#view_4035 .kn-table tbody td,
+#view_4039 .kn-table tbody td {
+  transition: all 0.1s ease-in-out;
+}
+#view_4035 .kn-table tbody tr:hover td,
+#view_4039 .kn-table tbody tr:hover td {
+  background-color: #ffffff !important;
+}
+
+/* Encabezados */
+#view_4039 .kn-table th,
+#view_4035 .kn-table th {
+  background-color: #006f77;
+  color: #F5F5F5;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+  text-align: center;
+}
+/* Centra encabezados */
+#view_4039 thead th:nth-child(1) *,
+#view_4039 thead th:nth-child(2) *,
+#view_4039 thead th:nth-child(3) *,
+#view_4039 thead th:nth-child(4) *,
+#view_4039 thead th:nth-child(5) *,
+#view_4035 thead th:nth-child(1) *,
+#view_4035 thead th:nth-child(2) *,
+#view_4035 thead th:nth-child(3) *,
+#view_4035 thead th:nth-child(4) * {
+  text-align: center !important;
+  display: block;
+  width: 100%;
+}
+/* Celdas */
+#view_4039 .kn-table td,
+#view_4035 .kn-table td {
+  background-color: #f3f3f3;
+  border: 0.5px solid #e3e3e3;
+}
+
+/*Botón Enviar*/
+#view_4034 .kn-submit button {
+  background-color: #006f77 !important;
+  color: #F5F5F5 !important;
+  border-radius: 6px;
+  font-weight: 600;
+   transition: 0.2s ease;
+}
+#view_4034 .kn-submit button:hover {
+  background-color: #008d97 !important;
+  color: #F5F5F5 !important;
+}
+
+/* Text box */
+#view_4034 input[type="text"],
+#view_4034 select,
+#view_4035 input[type="text"],
+#view_4035 select,
+#view_4034 textarea,
+#view_4039 input[type="text"],
+#view_4039 select,
+#view_4039 textarea {
+  border: 1px solid #006f77;
+  border-radius: 6px;
+}
+#view_4034 input:focus,
+#view_4034 select:focus,
+#view_4034 textarea:focus,
+#view_4035 input:focus,
+#view_4035 select:focus,
+#view_4039 input:focus,
+#view_4039 select:focus,
+#view_4039 textarea:focus {
+  border: 1px solid #006f77 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(0, 111, 134, 0.669);
+}
+/*Botón reiniciar*/
+#view_4035 .kn-clear-search.kn-button.is-link,
+#view_4039 .kn-clear-search.kn-button.is-link {
+  color: #006f77 !important;
+  transition: 0.2s ease;
+}
+#view_4035 a.reset.kn-button.is-link,
+#view_4039 a.reset.kn-button.is-link {
+  color: #006f77 !important;
+}
+/*Botón buscar*/
+#view_4035 .kn-button.search,
+#view_4039 .kn-button.search {
+  background-color: #006f77;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  transition: 0.2s ease;
+}
+#view_4035 .kn-button.search:hover,
+#view_4039 .kn-button.search:hover {
+  background-color: #008d97;
+  color: #F5F5F5;
+}
+/*Botón exportar y filtro*/
+#view_4039 .kn-export-button,
+#view_4039 .kn-export-button a,
+#view_4039 .kn-filters-nav,
+#view_4039 .kn-filters-nav a {
+  background-color: #006f77 !important;
+  color: #F5F5F5 !important;
+  border: none !important;
+  border-radius: 0px;
+  transition: 0.2s ease;
+}
+#view_4039 .kn-export-button:hover,
+#view_4039 .kn-export-button a:hover,
+#view_4039 .kn-filters-nav:hover,
+#view_4039 .kn-filters-nav a:hover {
+background-color: #008d97 !important;
+color: #F5F5F5 !important;
+}
+
+/*contenedorDeFormulario */
+#view_4034 {
+  background: #ebebeb;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+  border: 1px solid #e8e8e8;
+}
+/*contenedorDeTabla */
+#view_4035,
+#view_4039 {
+  background: #ebebeb;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+  border: 1px solid #e8e8e8;
+}
+/*Títulos*/
+#view_4034 .view-header h2,
+#view_4035 .view-header h2,
+#view_4039 .view-header h2 {
+  color: #006f77;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #006f77;
+  display: inline-block;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+/*pocoMásGrandeElTextbox*/
+#view_4034 input,
+#view_4034 select,
+#view_4034 textarea {
+  min-height: 35px;
+  transition: all .25s ease;
+}
+#view_4034 textarea {
+  min-height: 100px;
+}
+/*botónExaminar*/
+#field_3158_upload::file-selector-button {
+  background-color: #006f77;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#field_3158_upload::file-selector-button:hover {
+  background-color: #008d97;
+}
+
+/*ocultaBotónNativoParaSubirArchivo*/
+#view_4034 #field_3158_upload {
+  display: none;
+}
+
+/*botónDeUpload*/
+#view_4034 .custom-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #006f77;
+  color: #F5F5F5;
+  padding: 4px 9px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*botónExaminarHover*/
+#view_4034 .custom-upload-btn:hover {
+  background-color: #008d97;
+  color: #F5F5F5;
+}
