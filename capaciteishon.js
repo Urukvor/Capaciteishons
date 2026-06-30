@@ -1,4 +1,4 @@
-console.log("capaciteishon.js cargado correctamente");
+console.log("capaciteishon.js cargado acorrectamente");
 
 
 // =================================
